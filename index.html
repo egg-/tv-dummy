@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tv-loader</title>
+</head>
+<body onload="$loader.init();" onunload="$loader.destroy();">
+
+<a href="#" id="handler">handler</a>
+<div id="logger"></div>
+
+<!-- Common widget API -->
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Plugin/Define.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Plugin.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/CRunModule.js"></script>
+<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/Util/Include.js"></script>
+
+<style type="text/css">
+body { background: #fff; }
+#handler { opacity: 0; }
+#logger { font-weight: bold; font-size: 32px; }
+</style>
+<script type="text/javascript">
+var $loader = function() {
+	var _widgetAPI = new Common.API.Widget();
+
+	return {
+		init: function() {
+			_widgetAPI.sendReadyEvent();
+			
+			// event bind
+			var handler = document.getElementById('handler');
+			var logger = document.getElementById('logger');
+
+			handler.onkeydown = function(evt) {
+				logger.innerHTML = [evt.keyCode, evt.which, evt.keyIdentifier].join(', ');
+			};
+
+			handler.focus();
+		},
+		destroy: function() {
+		}
+	}
+}();
+</script>
+
+</body>
+</html>

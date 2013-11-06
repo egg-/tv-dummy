@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<BigThumbIcon>resource/icon/icon_115.png</BigThumbIcon>
+	<ThumbIcon>resource/icon/icon_106.png</ThumbIcon>
+	<BigListIcon>resource/icon/icon_95.png</BigListIcon>
+	<ListIcon>resource/icon/icon_85.png</ListIcon>
+
+	<BigThumbIconHD>resource/icon/icon_173.png</BigThumbIconHD>
+	<ThumbIconHD>resource/icon/icon_158.png</ThumbIconHD>
+	<BigListIconHD>resource/icon/icon_143.png</BigListIconHD>
+	<ListIconHD>resource/icon/icon_128.png</ListIconHD>
+	<Icon1080>resource/icon/icon_128.png</Icon1080>
+
+	<category>video</category>
+	<autoUpdate>y</autoUpdate>
+
+	<login>n</login>
+	<cpname></cpname>
+	<cpauthjs></cpauthjs>
+	<deleteJS>ResetDB</deleteJS>
+	
+	<ver>0.900</ver>
+	<mgrver>2.265</mgrver>
+	<fullwidget>y</fullwidget>
+	<srcctl>y</srcctl>
+	<glassmode>y</glassmode>
+	
+	<childlock>n</childlock>
+	<audiomute>y</audiomute>
+	<videomute>y</videomute>
+	<dcont>y</dcont>
+	<movie>y</movie>
+	<flashplayer>y</flashplayer>
+			
+	<runTitle>tv-loader</runTitle>
+	<widgetname>tv-loader</widgetname>
+	<description></description>
+
+	<width>1280</width>
+	<height>720</height>
+
+	<mouse>n</mouse><!-- y 일경우 IME 작동 불능 -->
+	<voice>n</voice>
+
+	<!-- http://samsungdforum.com/Guide/art00082/index.html -->
+	<pushNotice>y</pushNotice>
+	<pushControl>y</pushControl>
+	<pushUserBinding>n</pushUserBinding>
+
+	<author>
+		<name>handstudio Co., Ltd.</name>
+		<email>tv@mhand.net</email>
+		<link>http://handstudio.net</link>
+		<organization>handstudio Co., Ltd.</organization>
+	</author>
+</widget>
